@@ -24,7 +24,7 @@ Clone this repository:
 
 Navigate into the directory where you cloned this repository:
 
->`cd ./easy-README`
+>`cd ./team-creator`
 
 Run npm install to retrieve dependencies:
 
@@ -33,12 +33,22 @@ Run npm install to retrieve dependencies:
 ## Usage
 
 Open your terminal and navigate to the directory
->`cd ./easy-README`  
+>`cd ./team-creator`  
 
 Run node to initialize the application
 > `node index.js`
 
+Answer the questions when prompted. After the last question, an HTML file will be created saved in the folder called dist.
+
+[Link](https://drive.google.com/file/d/1zcN9JC0FI7rmJ22yhtFNyEmSH_HXvXl1/view?usp=sharing) to video showing a walkthrough of the application and generated HTML file.
+
 ### Screenshots
+
+![terminal](./images/terminal.png)
+
+![generated HTML](./images/generated%20HTML.png)
+
+![final page](./images/generated%20summary%20page.png)
 
 ## Credits
 
