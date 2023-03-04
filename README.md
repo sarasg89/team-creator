@@ -40,7 +40,7 @@ Run node to initialize the application
 
 Answer the questions when prompted. After the last question, an HTML file will be created saved in the folder called dist.
 
-[Link](https://drive.google.com/file/d/1zcN9JC0FI7rmJ22yhtFNyEmSH_HXvXl1/view?usp=sharing) to video showing a walkthrough of the application and generated HTML file.
+https://user-images.githubusercontent.com/118869836/222932008-05fcaffe-490c-4bc8-abf3-863afba77a2a.mov
 
 ### Screenshots
 
