@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const validator = require('email-validator');
+const dayjs = require('dayjs');
 const generateHTML = require('./lib/generateHTML');
 const fs = require('fs');
 const Manager = require('./lib/manager');
@@ -74,7 +75,7 @@ function engineerQuestions() {
                     setTimeout(function () {
                         if (isNaN(input) === true) {
                             done("You need to provide an ID number for this team member");
-                            return;
+                            return false;
                         }
                         done(null, true);
                     }, 50);
@@ -116,7 +117,7 @@ function engineerQuestions() {
             },
         ])
         .then((data) => {
-            const newEngineer = new Engineer(data.engineerName, data.engineerID, data.engineerEmail, data.engineerGithub);
+            const newEngineer = new Engineer(data.engineerName.toUpperCase(), data.engineerID, data.engineerEmail, data.engineerGithub);
             listOfEngineers.push(newEngineer);
             checkForMoreUsers();
         })
@@ -149,7 +150,7 @@ function internQuestions() {
                     setTimeout(function () {
                         if (isNaN(input) === true) {
                             done("You need to provide an ID number for this team member");
-                            return;
+                            return false;
                         }
                         done(null, true);
                     }, 50);
@@ -158,7 +159,7 @@ function internQuestions() {
             {
                 type: "input",
                 message: internEmailQ,
-                name: "internEmail     ",
+                name: "internEmail",
                 validate: function (input) {
                     const done = this.async();
                     setTimeout(function () {
@@ -191,7 +192,7 @@ function internQuestions() {
             },
         ])
         .then((data) => {
-            const newIntern = new Intern(data.internName, data.internID, data.internEmail, data.internSchool);
+            const newIntern = new Intern(data.internName.toUpperCase(), data.internID, data.internEmail, data.internSchool);
             listOfInterns.push(newIntern);
             checkForMoreUsers();
         })
@@ -262,7 +263,7 @@ function init() {
                     setTimeout(function () {
                         if (isNaN(input) === true) {
                             done("You need to provide an ID number for this team member");
-                            return;
+                            return false;
                         }
                         done(null, true);
                     }, 50);
@@ -296,7 +297,7 @@ function init() {
                     setTimeout(function () {
                         if (isNaN(input) === true) {
                             done("You need to provide an office number for this team member");
-                            return;
+                            return false;
                         }
                         done(null, true);
                     }, 50);
@@ -304,7 +305,7 @@ function init() {
             },
         ])
         .then((data) => {
-            newManager = new Manager(data.managerName, data.managerID, data.managerEmail, data.managerOffice);
+            newManager = new Manager(data.managerName.toUpperCase(), data.managerID, data.managerEmail, data.managerOffice);
             checkForMoreUsers();
         })
 }
