@@ -1,7 +1,7 @@
 {
   "name": "team-creator",
-  "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
   "version": "1.0.0",
+  "description": "create an HTML summary page showing your team's roster",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -13,7 +13,7 @@
   "keywords": [
     "command",
     "line",
-    "nodejs",
+    "npm",
     "inquirer",
     "jest",
     "test"
@@ -25,7 +25,10 @@
   },
   "homepage": "https://github.com/sarasg89/team-creator#readme",
   "dependencies": {
+    "email-validator": "^2.0.4",
     "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.4.3"
   }
 }
-x
