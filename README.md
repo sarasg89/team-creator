@@ -42,8 +42,6 @@ Run node to initialize the application
 
 ## Credits
 
-Reset CSS found in Eric A. Meyer's [site](https://meyerweb.com/eric/tools/css/reset/)
-
 ## License
 
 MIT License

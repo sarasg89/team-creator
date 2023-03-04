@@ -1,5 +1,31 @@
 {
+  "name": "team-creator",
+  "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarasg89/team-creator.git"
+  },
+  "keywords": [
+    "command",
+    "line",
+    "nodejs",
+    "inquirer",
+    "jest",
+    "test"
+  ],
+  "author": "Sara Seoane Garcia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarasg89/team-creator/issues"
+  },
+  "homepage": "https://github.com/sarasg89/team-creator#readme",
   "dependencies": {
     "inquirer": "^8.2.4"
   }
 }
+x
