@@ -218,16 +218,15 @@ function createFile() {
                 ])
                 .then((response) => {
                     if (response.override) {
-                        writeToFile(fileName, generateHTML(data));
-                        console.log(override)
+                        writeToFile(fileName, generateHTML(newManager, listOfEngineers, listOfInterns));
                     } else {
                         var timeStamp = dayjs().unix()
                         fileName = `./dist/index-${timeStamp}.html`;
-                        writeToFile(fileName, generateHTML(data));
+                        writeToFile(fileName, generateHTML(newManager, listOfEngineers, listOfInterns));
                     }
                 })
         } else {
-            writeToFile(fileName, generateHTML(data));
+            writeToFile(fileName, generateHTML(newManager, listOfEngineers, listOfInterns));
         }
     } catch (err) {
         console.error(err);
