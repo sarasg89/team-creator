@@ -67,7 +67,7 @@ function engineerQuestions() {
                 }
             },
             {
-                type: "number",
+                type: "input",
                 message: engineerIDQ,
                 name: "engineerID",
                 validate: function (input) {
@@ -142,7 +142,7 @@ function internQuestions() {
                 }
             },
             {
-                type: "number",
+                type: "input",
                 message: internIDQ,
                 name: "internID",
                 validate: function (input) {
@@ -255,7 +255,7 @@ function init() {
                 }
             },
             {
-                type: "number",
+                type: "input",
                 message: managerIDQ,
                 name: "managerID",
                 validate: function (input) {
@@ -289,14 +289,14 @@ function init() {
                 }
             },
             {
-                type: "number",
+                type: "input",
                 message: managerOfficeQ,
                 name: "managerOffice",
                 validate: function (input) {
                     const done = this.async();
                     setTimeout(function () {
                         if (isNaN(input) === true) {
-                            done("You need to provide an office number for this team member");
+                            done("You need to provide an office input for this team member");
                             return false;
                         }
                         done(null, true);
