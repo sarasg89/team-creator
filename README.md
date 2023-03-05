@@ -40,19 +40,21 @@ Run node to initialize the application
 
 Answer the questions when prompted. After the last question, an HTML file will be created saved in the folder called dist.
 
-https://user-images.githubusercontent.com/118869836/222932008-05fcaffe-490c-4bc8-abf3-863afba77a2a.mov
+
 
 ### Screenshots
 
-![terminal](./images/terminal.png)
+![terminal](./images/new%20terminal.png)
 
-![generated HTML](./images/generated%20HTML.png)
+![generated HTML](./images/new%20generated%20HTML.png)
 
-![final page](./images/generated%20summary%20page.png)
+![final page](./images/new%20generated%20page.png)
 
 ## Credits
 
 In order to create mock tests for inquirer, I read several Stack Overflow threads, the most relevant being [this one](https://stackoverflow.com/questions/49862039/how-to-write-unit-tests-for-inquirer-js) and [this answer](https://stackoverflow.com/a/73940846) in another thread.
+
+In order to create a mock test for day.js, I used the block of code found in [this](https://stackoverflow.com/a/63377110) answer to a Stack Overflow tread.
 
 NPM packages used:
 

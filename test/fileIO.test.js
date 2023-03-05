@@ -10,7 +10,9 @@ const Intern = require('../lib/intern');
 
 jest.mock('fs');
 jest.mock('inquirer');
-jest.mock('dayjs');
+jest
+  .useFakeTimers()
+  .setSystemTime(new Date('1970-01-01'));
 
 describe("WriteToFile", () => {
     beforeEach(() => {
@@ -50,7 +52,7 @@ describe("CreateFile", () => {
     })
 
     it("should call fs.createFile when the file name already exists and the user chooses to NOT override it", async () => {
-        const fileName = "./dist/index-123456.html";
+        const fileName = "./dist/index-0.html";
         const manager = new Manager("Michael Scarn", "007", "michael.scarn@cia.com", 69);
         const engineerOne = new Engineer("Carl Grimes", 16, "carl.grimes@walkers.com", "sheriff_hat");
         const engineerTwo = new Engineer("Glenn Rhee", 53, "glenn.rhee@walkers.com", "pocket_watch");
