@@ -52,6 +52,8 @@ https://user-images.githubusercontent.com/118869836/222932008-05fcaffe-490c-4bc8
 
 ## Credits
 
+In order to create mock tests for inquirer, I read several Stack Overflow threads, the most relevant being [this one](https://stackoverflow.com/questions/49862039/how-to-write-unit-tests-for-inquirer-js) and [this answer](https://stackoverflow.com/a/73940846) in another thread.
+
 NPM packages used:
 
 - [inquirer](https://www.npmjs.com/package/inquirer)
