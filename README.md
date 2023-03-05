@@ -52,6 +52,12 @@ https://user-images.githubusercontent.com/118869836/222932008-05fcaffe-490c-4bc8
 
 ## Credits
 
+NPM packages used:
+
+- [inquirer](https://www.npmjs.com/package/inquirer)
+- [email validator](https://www.npmjs.com/package/email-validator)
+- [day.js](https://day.js.org/)
+
 ## License
 
 MIT License
