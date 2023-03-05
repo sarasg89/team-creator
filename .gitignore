@@ -1,5 +1,6 @@
 # Walkthrough videos
 images/*.mp4
+images/*.mov
 
 # General
 .DS_Store

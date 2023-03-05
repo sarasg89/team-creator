@@ -42,6 +42,8 @@ Answer the questions when prompted. After the last question, an HTML file will b
 
 https://user-images.githubusercontent.com/118869836/222977112-8727e8bb-c1e6-436f-b7cd-0a88671137fe.mp4
 
+Here is a [link](https://drive.google.com/file/d/11YGgV0NvMpHKpT2rhk4ZxwQKSVB6Gqnn/view?usp=sharing) to the video.
+
 ### Screenshots
 
 ![terminal](./images/new%20terminal.png)
