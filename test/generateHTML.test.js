@@ -19,7 +19,7 @@ describe("generateManagerCard", () => {
             </div>
             <ul class="border-success list-group list-group-flush">
                 <li class="list-group-item">ID: 007</li>
-                <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:michael.scarn@cia.com">michael.scarn@cia.com</a></li>
+                <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:michael.scarn@cia.com" target="_blank">michael.scarn@cia.com</a></li>
                 <li class="list-group-item">Office number: 69</li>
             </ul>
         </div>
@@ -46,7 +46,7 @@ describe("generateEngineerCards", () => {
                 </div>
                 <ul class="border-success list-group list-group-flush">
                     <li class="list-group-item">ID: 16</li>
-                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:carl.grimes@walkers.com">carl.grimes@walkers.com</a></li>
+                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:carl.grimes@walkers.com" target="_blank">carl.grimes@walkers.com</a></li>
                     <li class="list-group-item">GitHub: <a href="https://github.com/sheriff_hat" class="card-link text-success-emphasis" target="_blank"> sheriff_hat</a></li>
                 </ul>
             </div>
@@ -68,7 +68,7 @@ describe("generateEngineerCards", () => {
                 </div>
                 <ul class="border-success list-group list-group-flush">
                     <li class="list-group-item">ID: 16</li>
-                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:carl.grimes@walkers.com">carl.grimes@walkers.com</a></li>
+                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:carl.grimes@walkers.com" target="_blank">carl.grimes@walkers.com</a></li>
                     <li class="list-group-item">GitHub: <a href="https://github.com/sheriff_hat" class="card-link text-success-emphasis" target="_blank"> sheriff_hat</a></li>
                 </ul>
             </div>
@@ -81,7 +81,7 @@ describe("generateEngineerCards", () => {
                 </div>
                 <ul class="border-success list-group list-group-flush">
                     <li class="list-group-item">ID: 53</li>
-                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:glenn.rhee@walkers.com">glenn.rhee@walkers.com</a></li>
+                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:glenn.rhee@walkers.com" target="_blank">glenn.rhee@walkers.com</a></li>
                     <li class="list-group-item">GitHub: <a href="https://github.com/pocket_watch" class="card-link text-success-emphasis" target="_blank"> pocket_watch</a></li>
                 </ul>
             </div>
@@ -108,7 +108,7 @@ describe("generateInternCards", () => {
                 </div>
                 <ul class="border-success list-group list-group-flush">
                     <li class="list-group-item">ID: 7</li>
-                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:ron@pottermore.com">ron@pottermore.com</a></li>
+                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:ron@pottermore.com" target="_blank">ron@pottermore.com</a></li>
                     <li class="list-group-item text-capitalize">School: Hogwarts</li>
                 </ul>
             </div>
@@ -130,7 +130,7 @@ describe("generateInternCards", () => {
                 </div>
                 <ul class="border-success list-group list-group-flush">
                     <li class="list-group-item">ID: 3</li>
-                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:hermione@pottermore.com">hermione@pottermore.com</a></li>
+                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:hermione@pottermore.com" target="_blank">hermione@pottermore.com</a></li>
                     <li class="list-group-item text-capitalize">School: Hogwarts</li>
                 </ul>
             </div>
@@ -143,7 +143,7 @@ describe("generateInternCards", () => {
                 </div>
                 <ul class="border-success list-group list-group-flush">
                     <li class="list-group-item">ID: 13</li>
-                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:draco@pottermore.com">draco@pottermore.com</a></li>
+                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:draco@pottermore.com" target="_blank">draco@pottermore.com</a></li>
                     <li class="list-group-item text-capitalize">School: Hogwarts</li>
                 </ul>
             </div>
@@ -173,7 +173,7 @@ describe("generateHTML", () => {
             </div>
             <ul class="border-success list-group list-group-flush">
                 <li class="list-group-item">ID: 007</li>
-                <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:michael.scarn@cia.com">michael.scarn@cia.com</a></li>
+                <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:michael.scarn@cia.com" target="_blank">michael.scarn@cia.com</a></li>
                 <li class="list-group-item">Office number: 69</li>
             </ul>
         </div>
@@ -188,7 +188,7 @@ describe("generateHTML", () => {
                 </div>
                 <ul class="border-success list-group list-group-flush">
                     <li class="list-group-item">ID: 16</li>
-                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:carl.grimes@walkers.com">carl.grimes@walkers.com</a></li>
+                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:carl.grimes@walkers.com" target="_blank">carl.grimes@walkers.com</a></li>
                     <li class="list-group-item">GitHub: <a href="https://github.com/sheriff_hat" class="card-link text-success-emphasis" target="_blank"> sheriff_hat</a></li>
                 </ul>
             </div>
@@ -203,7 +203,7 @@ describe("generateHTML", () => {
                 </div>
                 <ul class="border-success list-group list-group-flush">
                     <li class="list-group-item">ID: 7</li>
-                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:ron@pottermore.com">ron@pottermore.com</a></li>
+                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:ron@pottermore.com" target="_blank">ron@pottermore.com</a></li>
                     <li class="list-group-item text-capitalize">School: Hogwarts</li>
                 </ul>
             </div>
@@ -227,7 +227,7 @@ describe("generateHTML", () => {
             </div>
             <ul class="border-success list-group list-group-flush">
                 <li class="list-group-item">ID: 007</li>
-                <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:michael.scarn@cia.com">michael.scarn@cia.com</a></li>
+                <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:michael.scarn@cia.com" target="_blank">michael.scarn@cia.com</a></li>
                 <li class="list-group-item">Office number: 69</li>
             </ul>
         </div>
@@ -242,7 +242,7 @@ describe("generateHTML", () => {
                 </div>
                 <ul class="border-success list-group list-group-flush">
                     <li class="list-group-item">ID: 7</li>
-                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:ron@pottermore.com">ron@pottermore.com</a></li>
+                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:ron@pottermore.com" target="_blank">ron@pottermore.com</a></li>
                     <li class="list-group-item text-capitalize">School: Hogwarts</li>
                 </ul>
             </div>
@@ -267,7 +267,7 @@ describe("generateHTML", () => {
             </div>
             <ul class="border-success list-group list-group-flush">
                 <li class="list-group-item">ID: 007</li>
-                <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:michael.scarn@cia.com">michael.scarn@cia.com</a></li>
+                <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:michael.scarn@cia.com" target="_blank">michael.scarn@cia.com</a></li>
                 <li class="list-group-item">Office number: 69</li>
             </ul>
         </div>
@@ -282,7 +282,7 @@ describe("generateHTML", () => {
                 </div>
                 <ul class="border-success list-group list-group-flush">
                     <li class="list-group-item">ID: 16</li>
-                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:carl.grimes@walkers.com">carl.grimes@walkers.com</a></li>
+                    <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:carl.grimes@walkers.com" target="_blank">carl.grimes@walkers.com</a></li>
                     <li class="list-group-item">GitHub: <a href="https://github.com/sheriff_hat" class="card-link text-success-emphasis" target="_blank"> sheriff_hat</a></li>
                 </ul>
             </div>
@@ -305,7 +305,7 @@ describe("generateHTML", () => {
             </div>
             <ul class="border-success list-group list-group-flush">
                 <li class="list-group-item">ID: 007</li>
-                <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:michael.scarn@cia.com">michael.scarn@cia.com</a></li>
+                <li class="list-group-item">Email: <a class="text-success-emphasis" href="mailto:michael.scarn@cia.com" target="_blank">michael.scarn@cia.com</a></li>
                 <li class="list-group-item">Office number: 69</li>
             </ul>
         </div>
