@@ -1,8 +1,6 @@
 const inquirer = require('inquirer');
 const validator = require('email-validator');
-const dayjs = require('dayjs');
-const generateHTML = require('./lib/generateHTML');
-const fs = require('fs');
+const FileIO = require('./lib/fileIO');
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
@@ -43,7 +41,7 @@ function checkForMoreUsers() {
             } else if (data.nextMember === "Intern") {
                 internQuestions();
             } else {
-                createFile();
+                FileIO.createFile(newManager, listOfEngineers, listOfInterns);
             }
         })
 }
@@ -198,42 +196,6 @@ function internQuestions() {
         })
 };
 
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => 
-    err ? console.log(err) : console.log("Success!")
-    );
-}
-
-function createFile() {
-    let fileName = "./dist/index.html";
-    try {
-        if (fs.existsSync(fileName)) {
-            inquirer
-                .prompt([
-                    {
-                        type: "confirm",
-                        message: "This file name already exists, would you like to override it?",
-                        name: "override",
-                        default: "y",
-                    }
-                ])
-                .then((response) => {
-                    if (response.override) {
-                        writeToFile(fileName, generateHTML(newManager, listOfEngineers, listOfInterns));
-                    } else {
-                        var timeStamp = dayjs().unix()
-                        fileName = `./dist/index-${timeStamp}.html`;
-                        writeToFile(fileName, generateHTML(newManager, listOfEngineers, listOfInterns));
-                    }
-                })
-        } else {
-            writeToFile(fileName, generateHTML(newManager, listOfEngineers, listOfInterns));
-        }
-    } catch (err) {
-        console.error(err);
-    }
-}
-
 
 // Function to initialize app
 function init() {
@@ -296,7 +258,7 @@ function init() {
                     const done = this.async();
                     setTimeout(function () {
                         if (isNaN(input) === true) {
-                            done("You need to provide an office input for this team member");
+                            done("You need to provide an office number for this team member");
                             return false;
                         }
                         done(null, true);
